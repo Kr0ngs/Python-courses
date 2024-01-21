@@ -1,12 +1,6 @@
-def merge_lists_to_dict(a, b):
-    c = zip(a, b)
-    d = dict(c)
-    return d
+my_list = {'apple', 'banana', 'lime'}
 
-
-fruits = ['apple', 'banana', 'lime']
-quantities = [100, 70, 50]
-
-res = merge_lists_to_dict(fruits, quantities)
-print(res)
-print(type(res))
+print('qiwi' not in my_list)
+# True
+print('apple' not in my_list)
+# False
