@@ -1,13 +1,14 @@
-my_object = {
-    'Name': 'Sasha',
-    'City': 'Kazan',
-}
+class Commet:
+    def __init__(self, text):
+        self.text = text
+        self.votes_qty = 0
 
-other_dict = {}
+    def upvote(self):
+        self.votes_qty += 1
 
-# res = [(k: v) for k, v in my_object.items()]
-res = [(k, v.upper()) for k, v in my_object.items()]
 
-other_res = dict(res)
+first_comment = Commet("First comment ")
 
-print(other_res)
+print(first_comment.votes_qty)  # 0
+print(first_comment.text)
+# First comment

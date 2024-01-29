@@ -12,7 +12,7 @@ def start_message(message):
 def get_text_messages(message):
     if message.text == 'Привет':
         bot.send_message(message.from_user.id,
-                         "Викулька какулька, я тебя люблю")
+                         "1231")
 
     else:
         bot.send_message(message.from_user.id, "Напиши привет")
